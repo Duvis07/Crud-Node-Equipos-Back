@@ -1,6 +1,7 @@
 const express = require("express");
+require("dotenv").config();
  require("./config/conexion");
-const port = (process.env.port || 8080);
+const port = (process.env.port );
 
 //se llama una instancia de express
 const app = express();
